@@ -10,13 +10,13 @@ namespace Koerpergewicht
             int groeße, koerpergewicht;
 
             Console.WriteLine("GEWICHTSBERECHNUNG(BROCA-Methode)\n");
-            Console.WriteLine("Geben Sie bitte ihre Körpergröße ein: ");
+            Console.Write("Geben Sie bitte ihre Körpergröße(in cm) ein: ");
             groeße = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("\n");
 
             koerpergewicht = groeße - 100;
-            Console.WriteLine("Ihr Normalgewicht beträgt {0}", koerpergewicht);
+            Console.WriteLine("Ihr Normalgewicht beträgt {0}Kg bei einer Körpergröße von {1} cm", koerpergewicht,groeße);
 
             Console.ReadKey();
         }
